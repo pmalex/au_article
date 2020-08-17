@@ -30,7 +30,7 @@
 
 \begin{document}
 	
-    \title[Acts with Identities in the Congruence Lattice]{Acts with Identities in the Congruence Lattice\footnote{Research supported by a grant of the Center Fund. Appl. Math. of Lomonosov MSU}}
+    \title[Acts with Identities in the Congruence Lattice]{Acts with Identities in the Congruence Lattice}
 
     %% First author: in the order \author, \address, \urladdr, \email
     \author[I.B. Kozhuhov]{I.B. Kozhuhov}
@@ -42,40 +42,42 @@
     \email{kozhuhov\_i\_b@mail.ru}
 
     %% Second author: in the order \author, \address, \urladdr, \email
-    \author[A.M. Pryanichnikov]{A.M. Pryanichnikov}
+    \corrauthor[A.M. Pryanichnikov]{A.M. Pryanichnikov}
     \address{National Research University MIET\\Moscow\\Russia}
     \email{genary@ya.ru}
 %	\footnote{Research supported by a grant of the Center Fund. Appl. Math. of Lomonosov MSU}
     %% AMS subject classification; see http://www.ams.org/msc
     %% List classification codes in order of relevance
     \subjclass{06B20, 08A30, 20M35}
+    
+    \thanks{Research supported by a grant of the Center Fund. Appl. Math. of Lomonosov MSU}
 	
     %% Key words and phrases
     \keywords{act over semigroup, congruence lattice, lattice identity}
 
     \begin{abstract}
-    We prove that, for any act $X$ over a finite semigroup $S$, the congruence lattice  ${\rm Con}X$ satisfies a non-trivial lattice identity if and only if $X$ is finite. A similar statement is proved for an act with zero over a completely (0-)simple semigroup $\mathcal M^0(G,I,\Lambda,P)$ where $|G|,|I| <\infty$.
+    We prove that for any act $X$ over a finite semigroup $S$, the congruence lattice  ${\rm Con}X$ satisfies a non-trivial lattice identity if and only if $X$ is finite. A similar statement is proved for an act with zero over a completely (0-)simple semigroup $\mathcal M^0(G,I,\Lambda,P)$ where $|G|,|I| <\infty$.
     \end{abstract}
 	
 	\maketitle
 	
 	\section{Introduction}
 	
-	The congruence lattice $\Con A$ of a universal algebra $ A $ is an important characteristic of $A$. The smallest element of this lattice is the equality relation $ \Delta_A = \{ (a,a) \mid a \in A \} $, and the greatest is the universal relation $ \nabla_A = A \times A $. The lattice $\Con A$ is a complete sublattice of the lattice $\Eq A$ of all equivalence relationson the set $A$.
-One of the research areas of the general algebra is studying of algebras with certain conditions on congruences.	For example, the condition of triviality ($ \Con A = \{ \Delta_A, \nabla_A \} $) defines simple algebras (simple groups, rings, congruence-simple semigroups, etc.), maximality or minimality conditions define noetherian and artinian algebras.
+	The congruence lattice $\Con A$ of a universal algebra $ A $ is an important characteristic of $A$. The smallest element of this lattice is the equality relation $ \Delta_A = \{ (a,a) \mid a \in A \} $, and the greatest one is the universal relation $ \nabla_A = A \times A $. The lattice $\Con A$ is a complete sublattice of the lattice $\Eq A$ of all equivalence relations on the set $A$.
+    One of the research areas of the general algebra is investigating of algebras with certain conditions on congruences.	For example, the condition of triviality ($ \Con A = \{ \Delta_A, \nabla_A \} $) defines simple algebras (simple groups, rings, congruence-simple semigroups, etc.), maximality or minimality conditions define noetherian and artinian algebras.
 	
-	In paper~\cite{resh} was characterized the class of algebras, opposite to the class of simple algebras, namely, algebras in which all equivalence relations are congruences (i.e. $ \text{Con}A = \text{Eq}A $.
+	In paper~\cite{resh} was described class of algebras, opposite to the class of simple algebras, namely, algebras in which all equivalence relations are congruences (i.e. $ \text{Con}A = \text{Eq}A $).
     There are many works on subdirectly irreducible algebras, i.e. such algebras $A$ that either $ |A| = 1 $ or the lattice Con$A$ contains the smallest element different from $ \Delta_A $.
 	
-	The universal algebras with modular, or distributive, or chained congruence lattice also attracted the attention of specialists. In particular, these are the papers devoted to distributive and chained rings and modules and also acts (over semigroups) with distributive or modular congruence lattice~\cite{step,hal3}. It is interesting to note that although the act over a semigroup is an analogue of the module over a ring, congruence lattice of the module (i.e. lattice of submodules) is always modular, however, for the congruence lattice of the act the modularity is a rare phenomenon. Distributive and modular lattices form varieties, which are determined by the identities $ (x \vee y) \wedge z = (x \wedge z ) \vee (y \wedge z) $ and $ x \wedge ( y \vee z ) = x \wedge (( y \wedge (x \vee z)) \vee z ) $ respectively (see~\cite[Chapter 4, Theorem 1.1]{gretz}).  The chains form a class of lattices, which is not a variety, but it is closed with respect to sublattices and homomorphic images.
+	The universal algebras with modular, or distributive or chained congruence lattice also attracted the attention of specialists. In particular, there are the papers devoted to distributive and chained rings and modules and also acts (over semigroups) with distributive or modular congruence lattice~\cite{step,hal3}. It is interesting to note that although an act over a semigroup is an analog of the module over a ring, congruence lattice of the module (i.e. lattice of submodules) is always modular, however, for the congruence lattice of an act, the modularity is a rare phenomenon. Distributive and modular lattices form varieties, which are determined by the identities $ (x \vee y) \wedge z = (x \wedge z ) \vee (y \wedge z) $ and $ x \wedge ( y \vee z ) = x \wedge (( y \wedge (x \vee z)) \vee z ) $ respectively (see~\cite[Chapter 4, Theorem 1.1]{gretz}).  The chains form a class of lattices, which is not a variety, but it is closed with respect to sublattices and homomorphic images.
 	
-In the work \cite{memoirs} the congruence lattices and their identities are investigated and in \cite{jipsen} varieties of lattices (and hence the lattice identities).
-
-It is natural to consider the classes of algebras whose congruence lattices satisfy a lattice identity.	
-Note that "the existence of identity of $\Con A$" is a finiteness condition on $A$.
-
-The basic notions and facts of theory of acts may be found in \cite{kilp}, of semigroup theory in \cite{cliff}, of lattice theory in  \cite{gretz}, of universal algebra in \cite{burris}, \cite{kon}, of lattice varieties in \cite{jipsen}. 	
-In what follows, $\mathcal{V}$ will be denote the \textit{variety of all lattices}, and $\Var L$ \textit{the variety generated by the lattice $L$}, and $FL(n)$ \textit{the free lattice with $n$ free generators}. Moreover, $\mathcal{M}(G,I,\Lambda,P)$ and $\mathcal{M}^0(G,I,\Lambda,P)$ will be denote a \textit{Rees matrix semigroup} and a \textit{regular Rees matrix semigroup with zero} (see~\cite[Chap.2]{cliff}). A lattice identity is called non-trivial if it holds in not all lattices.
+    In work \cite{memoirs}, the congruence lattices and their identities are investigated. In work \cite{jipsen} are investigated varieties of lattices (and hence the lattice identities).
+    
+    It is natural to consider the classes of algebras whose congruence lattices satisfy a lattice identity.	
+    Note that "the existence of identity of $\Con A$" is a finiteness condition on $A$.
+    
+    The basic notions and facts of the theory of acts may be found in \cite{kilp}, of semigroup theory in \cite{cliff}, of lattice theory in  \cite{gretz}, of universal algebra in \cite{burris}, \cite{kon}, of lattice varieties in \cite{jipsen}. 	
+    In what follows, $\mathcal{V}$ will denote the \textit{variety of all lattices}, and $\Var L$ \textit{the variety generated by the lattice $L$}, and $FL(n)$ \textit{the free lattice with $n$ free generators}. Moreover, $\mathcal{M}(G,I,\Lambda,P)$ and $\mathcal{M}^0(G,I,\Lambda,P)$ will denote a \textit{Rees matrix semigroup} and a \textit{regular Rees matrix semigroup with zero} (see~\cite[Chapter 2]{cliff}). A lattice identity is called non-trivial if it holds in not all lattices.
 	
 	The following 3 lemmas are well-known statements, their proofs we give for completeness.
 	
@@ -83,7 +85,7 @@ In what follows, $\mathcal{V}$ will be denote the \textit{variety of all lattice
 	    In a finite lattice, a non-trivial identity holds.
 	\end{lemma}
 	\begin{proof}
-	    Let $L$ be a finite lattice. The variety generated by a finite algebra is locally finite (see~\cite[Corollary 3.14]{kon}). Therefore, $\Var L$ consists of locally finite algebras. However, not all lattices are locally finite: a result of F. Whitman (see~\cite[Theorem 1.28]{free_lattices}) shows that for any $n$, the lattice $FL(n)$ may be isomorphically embedded into $FL(3)$, therefore $FL(3)$ is an infinite finitely generated lattice. Thus, $\Var L$ does not contain all lattices. It means that there exists a non-trivial identity which hold in all lattices of $\Var L$, and in particular in $L$.
+	    Let $L$ be a finite lattice. The variety generated by a finite algebra is locally finite (see~\cite[Corollary 3.14]{kon}). Therefore, $\Var L$ consists of locally finite algebras. However, not all lattices are locally finite: a result of F. Whitman (see~\cite[Theorem 1.28]{free_lattices}) shows that for any $n$, the lattice $FL(n)$ may be isomorphically embedded into $FL(3)$, therefore $FL(3)$ is an infinite finitely generated lattice. Thus, $\Var L$ does not contain all lattices. It means that there exists a non-trivial identity that holds in all lattices of $\Var L$, and in particular in $L$.
 	\end{proof}
 	
 	\begin{lemma}[\cite{sachs}] \label{lemma:b1}
@@ -94,10 +96,10 @@ In what follows, $\mathcal{V}$ will be denote the \textit{variety of all lattice
 	    If a lattice $L$ contains as a sublattice $\Eq M$ for some infinite set $M$, then $\Var L = \mathcal{V}$.
 	\end{lemma}
 	\begin{proof}
-	    If a non-trivial lattice identity is satisfied in $L$, then it must be also satisfied in $\Eq M$, but it is not so in view of Lemma~\ref{lemma:b1}. Hence, only the trivial lattice identities are satisfied in $L$, i.e. $\Var L = \mathcal{V}$.
+	    If a non-trivial lattice identity is satisfied in $L$, then it must be also satisfied in $\Eq M$, but it is not so because of Lemma~\ref{lemma:b1}. Hence, only the trivial lattice identities are satisfied in $L$, i.e. $\Var L = \mathcal{V}$.
 	\end{proof}
 
-The main results of this this work are the following statements.
+	The main results of this work are the following statements.
 	
 	\begin{theorem} \label{t01}
 	    Let $X$ be an act over a finite semigroup. Then the congruence lattice $\Con X$ satisfies a non-trivial lattice identity if and only if $X$ is finite.
@@ -107,7 +109,7 @@ The main results of this this work are the following statements.
 	    Let $S = \mathcal{M}^0(G,I,\Lambda,P)$ be a completely 0-simple semigroup and $|G| < \infty,\, |I| < \infty $. Then, for any act $X$ with zero over the semigroup $S$, the following holds: the congruence lattice $\Con X$ satisfies some non-trivial lattice identity if and only if $X$ is finite.
 	\end{theorem}
 	
-	If $I$ is an infinite set, then the statement of the Theorem~\ref{t02} is invalid. We construct two examples of infinite acts $X$ which are \textit{congruence-simple} (i.e. $\Con X = \{ \Delta, \nabla \}$). The first one is an act $X$ with zero over a semigroup of view $\mathcal{M}^0(\{e\},\mathbb{N},\mathbb{N},P)$, the second one is an act over a semigroup $\mathcal{M}(S_3,\mathbb{N}_0,\mathbb{N}_0,P)$ where $S_3$ is the group of permutations of 3-element set. In both examples $X$ is an infinite act but $\Con X$ is finite and therefore $\Con X$ satisfies a non-trivial identity.
+	If $I$ is an infinite set, then the statement of the Theorem~\ref{t02} is invalid. We construct two examples of infinite acts $X$ which are \textit{congruence-simple} (i.e. $\Con X = \{ \Delta, \nabla \}$). The first one is an act $X$ with zero over a semigroup of view $\mathcal{M}^0(\{e\},\mathbb{N},\mathbb{N},P)$, the second one is an act over a semigroup $\mathcal{M}(S_3,\mathbb{N}_0,\mathbb{N}_0,P)$ where $S_3$ is the group of permutations of a 3-element set. In both examples, $X$ is an infinite act but $\Con X$ is finite and therefore $\Con X$ satisfies a non-trivial identity.
 	
 	\begin{proposition} \label{pr01a}
 	    There exists a completely 0-simple semigroup $ S = $ \newline $ = \mathcal{M}^0(G,I,\Lambda,P) $ with $|G| = 1$ and an infinite act $X$ with zero over $S$ such that the lattice $\Con X$ is two-element.
@@ -121,20 +123,20 @@ The main results of this this work are the following statements.
 
 	\textit{An act over a semigroup} is the set $X$ on which the semigroup $S$ acts, i.e. a mapping $ X \times S \rightarrow X,\ (x,s) \mapsto xs $ is defined, satisfying the condition $ x(st)=(xs)t $ for all $x\in X,\ s,t\in S$ (see~\cite{kilp}). An act can be considered as a unary algebra, i.e. an algebra in which all operations are unary (operations of an act $X$ over a semigroup $S$ are multiplications by elements of a semigroup, i.e. $ x \mapsto xs \ (s\in S) $).
 	
-	If an act $X$ is a union of its subacts $ X_i\ (i \in I) $ and $ X_i \cap X_j = \emptyset $ for $i \neq j$, then we call $X$ a \textit{coproduct} of acts $X_i$ and write $ X = \coprod_{i\in I} X_i $. For any semigroup $S$ we denote by $S^1$ the smallest semigroup with unity containing $S$, i.e.
+	If an act $X$ is a union of its subacts $ X_i\ (i \in I) $ and $ X_i \cap X_j = \emptyset $ for $i \neq j$, then we call $X$ a \textit{coproduct} of acts $X_i$ and write $ X = \coprod_{i\in I} X_i $. For any semigroup $S$, we denote by $S^1$ the smallest semigroup with unity containing $S$, i.e.
 	$$ S^1 =
 		\begin{cases}
 			S & \text{if $S$ has a unity,}\\
 			S \cup \{1\} & \text{otherwise.}
 		\end{cases}
 	$$
-	Let $X$ be an act over a semigroup $S$. For $ x,y \in X$ put $ x \leqslant y \Leftrightarrow x \in yS^1 $. Obviously, the relation $\leqslant$ is a quasi-order on the set $X$. An act $X$ is called \textit{connected} if for any $x,y\in X$ there exists a sequence of elements $x_0,x_1,\ldots,x_{2k}\in X$ such that $$ x \geqslant x_0 \leqslant x_1 \geqslant x_2 \leqslant \ldots \geqslant x_{2k} \leqslant y. $$ It is easy to see that the connectiness of the act $X$ over the semigroup $S$ is exactly the connectivity of the graph with vertex set $X$ and edges $ (x,xs) $, where $ x \in X,\ s \in S $ and $x \neq xs$. In addition, every act is a coproduct of connected subacts (the connected components).
+	Let $X$ be an act over a semigroup $S$. For $ x,y \in X$, put $ x \leqslant y \Leftrightarrow x \in yS^1 $. Obviously, the relation $\leqslant$ is a quasi-order on the set $X$. An act $X$ is called \textit{connected} if for any $x,y\in X$ there exists a sequence of elements $x_0,x_1,\ldots,x_{2k}\in X$ such that $$ x \geqslant x_0 \leqslant x_1 \geqslant x_2 \leqslant \ldots \geqslant x_{2k} \leqslant y. $$ It is easy to see that the connectivity of the act $X$ over the semigroup $S$ is exactly the connectivity of the graph with vertex set $X$ and edges $ (x,xs) $, where $ x \in X,\ s \in S $ and $x \neq xs$. Moreover, every act is a coproduct of connected subacts (the connected components).
 	
-	A \textit{zero} of the act $X$ over semigroup $S$ is such element $z \in X$ that $zs=z$ for all $s \in S$.
-	Let $X$ be an act over a semigroup $S$ and $Y$ be its subact. The congruence $\rho_Y = (Y \times Y) \cup \Delta_X$ is called \textit{Rees congruence}. For the factor act ${X}/{\rho_Y}$ we will also use the term $X/Y$. The following statement is well known, the proof we give only for completeness.
+	A \textit{zero} of an act $X$ over semigroup $S$ is such element $z \in X$ that $zs=z$ for all $s \in S$.
+	Let $X$ be an act over a semigroup $S$ and $Y$ be its subact. The congruence $\rho_Y = (Y \times Y) \cup \Delta_X$ is called the \textit{Rees congruence}. For a factor act ${X}/{\rho_Y}$, we will also use the term $X/Y$. The following statement is well known, the proof we give only for completeness.
 	
 	\begin{lemma} \label{lemma:01}
-	    Let $X$ be an act and $Y$ be its subact. Then the lattices $\Con Y$ and $\Con {X}/{Y}$ are isomorphic embedded into the lattice $\Con X$.
+	    Let $X$ be an act and $Y$ be its subact. Then the lattices $\Con Y$ and $\Con {X}/{Y}$ are isomorphically embedded into the lattice $\Con X$.
 	\end{lemma}
 	\begin{proof}
 	    It is easy to verify that the map $\rho \mapsto \rho \cup \Delta_X$ is an isomorphic embedding $\Con Y$ into $\Con X$.
@@ -144,14 +146,14 @@ The main results of this this work are the following statements.
 	
 	\section{Acts over finite semigroups}
 	
-	Let $X$ be an act over a semigroup $S$. The equivalence relation $\sim$ on $X$ and the order relation on $X/\sim$ are determined by the quasi-order $\leqslant$ in the standard way. Namely, $$ x \sim y \Leftrightarrow x \leqslant y \wedge y \leqslant x. $$ and $\overline{x} \leqslant \overline{y} \Leftrightarrow x \leqslant y $ (if $\overline{x}, \overline{y}$ are $\sim$-classes containing $x,y$ resp.).
+	Let $X$ be an act over a semigroup $S$. The equivalence relation $\sim$ on $X$ and the order relation on $X/{\sim}$ are determined by the quasi-order $\leqslant$ in the standard way. Namely, $$ x \sim y \Leftrightarrow x \leqslant y \wedge y \leqslant x. $$ and $\overline{x} \leqslant \overline{y} \Leftrightarrow x \leqslant y $ (if $\overline{x}, \overline{y}$ are ${\sim}$-classes containing $x,y$ resp.).
 	For $x,y \in X$ we put $$ x < y \Leftrightarrow x \leqslant y \wedge x \nsim y. $$
 	
 	\begin{lemma} \label{lemma:03}
 	    The relation $<$ on $X$ is transitive.
 	\end{lemma}
 	\begin{proof}
-	    Let $x < y$ and $y < z$. Then $x \leqslant y$ and $y \leqslant z$. In view of the transitivity of the relation $\leqslant$ we have $x \leqslant z$. Assume that $x \sim z$. Then $z \leqslant x$. Therefore $x \leqslant y \leqslant z \leqslant x$, i.e. $x \sim y$, which contradicts the assumption.
+	    Let $x < y$ and $y < z$. Then $x \leqslant y$ and $y \leqslant z$. Because of the transitivity of the relation $\leqslant$, we have $x \leqslant z$. Assume that $x \sim z$, then $z \leqslant x$. Therefore $x \leqslant y \leqslant z \leqslant x$, i.e. $x \sim y$, which contradicts the assumption.
 	\end{proof}
 	
 	\begin{lemma} \label{lemma:04}
@@ -165,16 +167,16 @@ The main results of this this work are the following statements.
 		for all $i = 0,1,\ldots,k-1$. The elements $s_{k-1},s_{k-1}s_{k-2},\ldots,s_{k-1}s_{k-2}\ldots s_1s_0$ belong to the semigroup $S$. As $|S| = n$ and $k>n$ then they cannot have different. Therefore $s_{k-1}s_{k-2}\ldots s_i = s_{k-1}s_{k-2}\ldots s_j$ for some $i\neq j$. We may assume that $i < j$. The equation~\eqref{lf0} show that $x_i = x_j$ which contradicts to the inequation $x_j < x_i$.
 	\end{proof}
 	
-	This lemma allows us to introduce the concept of the length. Let $X$ be an act over a finite semigroup $S$. Put $$ Z_0 = \{ x \in X \mid \forall y \in X \ y \leqslant x \rightarrow y \sim x \}.$$ \textit{Length} $l(x)$ \textit{of an element} $x \in X$ is the largest number $k$ such that there exist a chain of elements $$x_0 < x_1 < \ldots < x_k=x.$$ As this chain is the longest, then $x_0 \in Z_0$. By Lemma~\ref{lemma:04} $k \leqslant n$. The length $l(x)$ of the act $X$ is a number $l(X) = \max \{ l(x) \mid x \in X\}$. Thus, $l(x) \leqslant n$ for all $x \in X$. Obviously $l(x) = 0 \Leftrightarrow x \in Z_0$. It is clear that $l(X) \leqslant n$.
+	This lemma allows us to introduce the concept of the length. Let $X$ be an act over a finite semigroup $S$. Put $$ Z_0 = \{ x \in X \mid \forall y \in X \ y \leqslant x \rightarrow y \sim x \}.$$ \textit{Length} $l(x)$ \textit{of an element} $x \in X$ is the largest number $k$ such that there exist a chain of elements $$x_0 < x_1 < \ldots < x_k=x.$$ As this chain is the longest, then $x_0 \in Z_0$. By Lemma~\ref{lemma:04} $k \leqslant n$. The length $l(x)$ of an act $X$ is a number $l(X) = \max \{ l(x) \mid x \in X\}$. Thus, $l(x) \leqslant n$ for all $x \in X$. Obviously $l(x) = 0 \Leftrightarrow x \in Z_0$. It is clear that $l(X) \leqslant n$.
 	
 	\begin{proof}[Proof of Theorem~\ref{t01}]
 	    \textit{Sufficiency.} As $X$ is finite then the lattice $\Con X$ is also finite. By Lemma~\ref{lb0} $\Con X$ satisfies a non-trivial identity.
 	
 		\textit{Necessity.} We must prove that if $X$ is infinite, then the lattice $\Con X$ does not satisfy a non-trivial identity. The proof is carried out by induction on the length $l(X)$ of the act $X$.
 		
-		\textit{Basis of induction.} Let $l(X) = 0$. Then $X = Z_0$ and we have: $$ \forall x \in X \ \forall s \in S \ \exists t \in S \ \ xst = x. $$ In this case, the relation $\sim$ is a congruence, its classes are the sets $xS^1\ (x \in X)$. These sets are finite, so ${X}/{\sim}$ is an infinite act consisting only of zeros. It follows that $\Con({X}/{\sim})=\Eq({X}/{\sim})$, and by Lemma~\ref{lemma:b1} $\Con({X}/{\sim})$ does not satisfy any non-trivial lattice identity. It follows from the Lemma~\ref{lemma:01} that the lattice $\Con X$ also does not satisfy any non-trivial identity.
+		\textit{Basis of induction.} Let $l(X) = 0$. Then $X = Z_0$ and we have: $$ \forall x \in X \ \forall s \in S \ \exists t \in S \ \ xst = x. $$ In this case, the relation $\sim$ is a congruence and its classes are the sets $xS^1\ (x \in X)$. These sets are finite, so ${X}/{\sim}$ is an infinite act consisting only of zeros. It follows that $\Con({X}/{\sim})=\Eq({X}/{\sim})$, and by Lemma~\ref{lemma:b1} $\Con({X}/{\sim})$ does not satisfy any non-trivial lattice identity. It follows from the Lemma~\ref{lemma:01} that the lattice $\Con X$ also does not satisfy any non-trivial identity.
 		
-		\textit{Inductive step.} Let $l(X) = m > 0$. If $Z_0$ is an infinite subact, then by the just proved statement, the lattice $\Con Z_0$ is not contained in any proper subvariety of the variety $\mathcal{V}$. By Lemma~\ref{lemma:01}, the lattice $\Con X$ contains the lattice $\Con Z_0$, therefore the lattice $\Con X$ does not satisfy a non-trivial identity.
+		\textit{Step of induction.} Let $l(X) = m > 0$. If $Z_0$ is an infinite subact, then by the just proved statement, the lattice $\Con Z_0$ is not contained in any proper subvariety of the variety $\mathcal{V}$. By Lemma~\ref{lemma:01}, the lattice $\Con X$ contains the lattice $\Con Z_0$, therefore the lattice $\Con X$ does not satisfy a non-trivial identity.
 		
 		Further we assume that $|Z_0| < \infty$. Put $X'={X}/{Z_0}$. Then $X'$ is an infinite act with the unique zero $z_0$. Clearly,  $l(z_0) = 0$ and $l(x) > 0$ for $x \neq z_0$.
 		
@@ -182,7 +184,7 @@ The main results of this this work are the following statements.
 		
 		Suppose $ Z_1 $ is infinite. Consider the following relations on the act $Z_1$: $$ \alpha = \{ (x,y) \in Z_1 \times Z_1 \mid xS^1 = yS^1 \}, $$ $$ \beta = \{ (x,y) \in Z_1 \times Z_1 \mid \forall s \in S^1 \ xs = z_0 \leftrightarrow ys = z_0 \}. $$
 		
-		Clearly, the relation $\alpha$ is the same as $\sim$. We prove that the relation $\alpha \cap \beta$ is an equivalence relation. Let $s \in S$ and $(x,y) \in \alpha \cap \beta$. If $xs = z_0$ then because of the inclusion $(x,y) \in \beta$ we also have $ys = z_0$. Hence $(xs,ys) \in \alpha \cap \beta$. Let $xs \neq z_0$. Then also $ ys \neq z_0 $. We have: $xs \leqslant x$. Since $xs \neq z_0$ then $xs \not < x$, hence $xs \sim x$. Similarly, $ys \sim y$. As $x \sim y$, then $ xs \sim ys$, i.e. $(xs,ys) \in \alpha$. We shall prove that $(xs,ys) \in \beta$. Since $xs \sim ys$ then $xs \cdot 1 = z_0 \leftrightarrow ys \cdot 1 = z_0$. Check that also $xs \cdot t = z_0 \leftrightarrow ys \cdot t = z_0$ for $t \in S$. Let $xst = z_0$. Since $(x,y) \in \beta$ then $yst = z_0$. Now it is clear that $(xs,ys) \in \beta$. Thus, $\alpha \cap \beta$ is a congruence on $Z_1$.
+		Clearly, the relation $\alpha$ is the same as $\sim$. Prove that the relation $\alpha \cap \beta$ is an equivalence relation. Let $s \in S$ and $(x,y) \in \alpha \cap \beta$. If $xs = z_0$, then because of the inclusion $(x,y) \in \beta$, we also have $ys = z_0$. Hence $(xs,ys) \in \alpha \cap \beta$. Let $xs \neq z_0$. Then also $ ys \neq z_0 $. We have: $xs \leqslant x$. Since $xs \neq z_0$, then $xs \not < x$, hence $xs \sim x$. Similarly, $ys \sim y$. As $x \sim y$, then $ xs \sim ys$, i.e. $(xs,ys) \in \alpha$. We shall prove that $(xs,ys) \in \beta$. Since $xs \sim ys$ then $xs \cdot 1 = z_0 \leftrightarrow ys \cdot 1 = z_0$. Check that also $xs \cdot t = z_0 \leftrightarrow ys \cdot t = z_0$ for $t \in S$. Let $xst = z_0$. Since $(x,y) \in \beta$, then $yst = z_0$. Now it is clear that $(xs,ys) \in \beta$. Thus, $\alpha \cap \beta$ is a congruence on $Z_1$.
 		
 		For $s \in S^1$ we put $ K_1 = \{ x \in Z_1 \mid xs = z_0 \} $, $ K_2 = \{ x \in Z_1 \mid xs \neq z_0 \}$, $\rho_s = (K_1 \times K_1) \cup (K_2 \times K_2)$. Clearly, $\rho_s$ is an equivalence relation on $Z_1$ with at most 2 classes $K_1$, $K_2$ (one of them may be empty). Obviously, $\beta = \bigcap \{\rho_s \mid s \in S^1\}$. Obviously, the classes of the equivalence $\beta$ are intersections of classes of the relations $\rho_s$. Thus, $\beta$ has no more than $2^{n+1}$ classes. Since $Z_1$ is infinite, there is an infinite class, say, $K$.
 		
@@ -196,23 +198,23 @@ The main results of this this work are the following statements.
 		
 		To complete the proof of the theorem, we are left to consider the case when $Z_1$ is a finite set. Put $X'' = X'/{Z_1}$.
 		
-		We prove that $l(X'') < m$. Let $ x_0 < x_1 < \ldots < x_k $ be the longest chain in $X''$. Assume that $k \geqslant m$ and lead this assumption to a contradiction. Since $X'' = (X' \setminus Z_1) \cup \{0\}$ then $ x_1 \neq Z_1$. By definition of $Z_1$ this means that there exists such $y \in X'$ that $y < x_1$ and $y \neq z_0$. If $y \notin Z_1$ then $z < y$ for some $z \neq z_0$, and we get the chain $z < y < x_1 < \ldots < x_k $ elements from $X$ which shows that $l(X) \geqslant k+1 > m$. This is a contradiction with the condition. So $y \in Z_1$ and $y \neq z_0$ in $X'$, i.e. $y \not \in Z_0$ in $X$. As $y \notin Z_0$, then $ z < y$ for some $z \in X$. We again get the chain $ z < y < x_1 < \ldots < x_k $ which is impossible.
+		Prove that $l(X'') < m$. Let $ x_0 < x_1 < \ldots < x_k $ be the longest chain in $X''$. Assume that $k \geqslant m$ and lead this assumption to a contradiction. Since $X'' = (X' \setminus Z_1) \cup \{0\}$ then $ x_1 \neq Z_1$. By definition of $Z_1$ this means that there exists such $y \in X'$ that $y < x_1$ and $y \neq z_0$. If $y \notin Z_1$ then $z < y$ for some $z \neq z_0$, and we get the chain $z < y < x_1 < \ldots < x_k $ elements from $X$ which shows that $l(X) \geqslant k+1 > m$. This is a contradiction with the condition. So $y \in Z_1$ and $y \neq z_0$ in $X'$, i.e. $y \not \in Z_0$ in $X$. As $y \notin Z_0$, then $ z < y$ for some $z \in X$. We again get the chain $ z < y < x_1 < \ldots < x_k $ which is impossible.
 		
-		Thus $ l(X'') < m$. Since $X''$ is infinite then by the induction hypothesis the lattice $\Con X''$ does not satisfy a non-trivial lattice identity. Since $X''$ is a homomorphic image of the act $X$ then by Lemma~\ref{lemma:01}, $\Con X''$ is a sublattice of lattice $\Con X$. From this we obtain that the lattice $\Con X$ does not satisfy a non-trivial identity which is a contradiction.
+		Thus $ l(X'') < m$. Since $X''$ is infinite, then by the induction hypothesis the lattice $\Con X''$ does not satisfy a non-trivial lattice identity. Since $X''$ is a homomorphic image of the act $X$ then by Lemma~\ref{lemma:01}, $\Con X''$ is a sublattice of lattice $\Con X$. From this, we obtain that the lattice $\Con X$ does not satisfy a non-trivial identity which is a contradiction.
 	\end{proof}
 	
 	\section{Acts over completely simple and completely 0-simple semigroups}
 	
-    A \textit{completely simple} semigroup is a semigroup $S$ which has no non-trivial ideals and has at least one primitive idempotent (i.e. a minimal idempotent with respect to the natural order on the set of idempotents: $e \leqslant f \Leftrightarrow ef=fe=e$). A semigroup $S$ with zero is called \textit{completely 0-simple} if the following conditions are held: 1) $S$ has no ideals other than $\{0\}$ and $S$; 2) $S$ has a 0-minimal (i.e. minimal among non-zero elements) idempotent; 3) $S^2 \neq 0$.
+    A \textit{completely simple} semigroup is a semigroup $S$, which has no non-trivial ideals and has at least one primitive idempotent (i.e. a minimal idempotent with respect to the natural order on the set of idempotents: $e \leqslant f \Leftrightarrow ef=fe=e$). A semigroup $S$ with zero is called \textit{completely 0-simple} if the following conditions are held: 1) $S$ has no ideals other than $\{0\}$ and $S$; 2) $S$ has a 0-minimal (i.e. minimal among non-zero elements) idempotent; 3) $S^2 \neq 0$.
 	
-	\textit{Rees matrix semigroup with zero} $\mathcal{M}^0(G,I,\Lambda,P)$ (here $G$ is a group, $I$ and $\Lambda$ are sets, $P=\Vert p_{\lambda i} \Vert$ ($\lambda \in \Lambda, i \in I$) is a matrix with elements from $G \cup \{0\}$) is defined as a set consisting of element 0 and elements of the form $(g)_{i\lambda}$, where $g \in G,\ i \in I,\ \lambda \in \Lambda$, with the multiplication
+	The \textit{Rees matrix semigroup with zero} $\mathcal{M}^0(G,I,\Lambda,P)$ (here $G$ is a group, $I$ and $\Lambda$ are sets, $P=\Vert p_{\lambda i} \Vert$ ($\lambda \in \Lambda, i \in I$) is a matrix with elements from $G \cup \{0\}$) is defined as a set consisting of element 0 and elements of the form $(g)_{i\lambda}$, where $g \in G,\ i \in I,\ \lambda \in \Lambda$, with the multiplication
 		$$ (g)_{i\lambda} \cdot (h)_{j\mu} =
 			\begin{cases}
 				(gp_{\lambda j}h)_{i\mu} & \text{if } p_{\lambda j} \neq 0,\\
 				0 & \text{if } p_{\lambda j} = 0.
 			\end{cases}
 		$$
-	\textit{Rees matrtix semigroup} $\mathcal{M}(G,I,\Lambda,P)$ where $G,I,\Lambda,P$ is the same as above but $p_{\lambda i} \in G$ for all $i \in I,\lambda \in \Lambda$ is the set of elements of type $(g)_{i\lambda}$ with multiplication $$ (g)_{i\lambda} \cdot (h)_{j\mu} = (gp_{\lambda j}h)_{i\mu}. $$
+	The \textit{Rees matrtix semigroup} $\mathcal{M}(G,I,\Lambda,P)$ where $G,I,\Lambda,P$ is the same as above but $p_{\lambda i} \in G$ for all $i \in I,\lambda \in \Lambda$ is the set of elements of type $(g)_{i\lambda}$ with multiplication $$ (g)_{i\lambda} \cdot (h)_{j\mu} = (gp_{\lambda j}h)_{i\mu}. $$
 	
 	Well-known Sushkevich -- Rees Theorem states that a completely simple semigroup is exactly a semigroup which is isomorphic to a semigroup $\mathcal{M}(G, I,\Lambda,P)$, and a completely 0-simple semigroup is such that is isomorphic to a Rees matrix semigroup $\mathcal{M}^0(G,I,\Lambda,P)$ where the matrix $P$ does not contain zero rows or columns (see~\cite{cliff}, Theorem 3.5 and remarks before Lemma 3.1).
 	
@@ -220,19 +222,19 @@ The main results of this this work are the following statements.
 	
 	All acts over the semigroup $\mathcal{M}(G,I,\Lambda,P)$ and all acts with zero over the semigroup $\mathcal{M}^0(G,I,\Lambda,P)$ were described in~\cite{avdeev}. Let us give this description, but firstly we will make some preliminary considerations.
 	
-	Let $S$ be a semigroup with the unit $e$. An act $X$ over $S$ is called \textit{unitary} if $xe=x$ for all $x \in X$. An act $X$ over a semigroup $S$ is called \textit{cyclic} if $X=aS^1$ for some $a \in X$. Every semigroup $S$ is an act over itself, and its congruences are exactly the right congruences of the semigroup. It is easly to verify that a right congruence of the group $G$ is exactly the decomposition into the right cosets of a subgroup of the group $G$. If $H$ is a subgroup of the group $G$, we denote by $G/H$ the set of the right cosets $Hg$ where $g \in G$. Clearly, $G/H$ is an act over $G$ with the operation $Hg \cdot g' = Hgg'$. Let $\{ H_\gamma \mid \gamma \in \Gamma \} $ be a family of subgroups of the group $G$. Put $$ Q = \bigsqcup_{\gamma \in \Gamma} (G/H_\gamma). $$ It is easy to prove that it is a general form of arbitrary unitary act over the group $G$ and $G/H$ is a general form of a unitary cyclic act over $G$.
+	Let $S$ be a semigroup with the unit $e$. An act $X$ over $S$ is called \textit{unitary} if $xe=x$ for all $x \in X$. An act $X$ over a semigroup $S$ is called \textit{cyclic} if $X=aS^1$ for some $a \in X$. Every semigroup $S$ is an act over itself, and its congruences are exactly the right congruences of the semigroup. It is easly to verify that a right congruence of the group $G$ is exactly the decomposition into the right cosets of a subgroup of the group $G$. If $H$ is a subgroup of the group $G$, we denote by $G/H$ the set of the right cosets $Hg$ where $g \in G$. Clearly, $G/H$ is an act over $G$ with the operation $Hg \cdot g' = Hgg'$. Let $\{ H_\gamma \mid \gamma \in \Gamma \} $ be a family of subgroups of the group $G$. Put $$ Q = \bigsqcup_{\gamma \in \Gamma} (G/H_\gamma). $$ It is easy to prove that it is a general form of an arbitrary unitary act over the group $G$, and $G/H$ is a general form of a unitary cyclic act over $G$.
 	
-	The following two propositions give a description of acts over completely simple and completely 0-simple semigroups.
+	The following two propositions describe an acts over completely simple and completely 0-simple semigroups.
 	
 	\begin{proposition}[\cite{avdeev}, Theorem 5] \label{pr01}
-	    Let $X$ be a set, $S=\mathcal{M}(G,I,\Lambda,P)$ be a completely simple semigroup, $\{ H_\gamma \mid \gamma \in \Gamma \}$ a family of subgroups of group $G$, $ Q = \bigsqcup_{\gamma \in \Gamma} (G/H_\gamma) $ a unitary act over $G$. Define for $ i \in I$ and $\lambda \in \Lambda$  mappings $\pi_i:X \rightarrow Q$, $\varkappa_\lambda: Q \rightarrow X$ such that $q \varkappa_\lambda \pi_i = q \cdot p_{\lambda i}$ for any $q \in Q$, $i \in I$, $\lambda \in \Lambda$. For $x \in X$ and $(g)_{i \lambda} \in S$ put $x \cdot (g)_{i \lambda} = (x \pi_i \cdot g)\varkappa_{\lambda}$. Then $X$ is an act over $S$. Moreover, every act over a completely simple semigroup is isomorphic to an act obtained by this way.
+	    Let $X$ be a set, $S=\mathcal{M}(G,I,\Lambda,P)$ be a completely simple semigroup, $\{ H_\gamma \mid \gamma \in \Gamma \}$ a family of subgroups of group $G$, $ Q = \bigsqcup_{\gamma \in \Gamma} (G/H_\gamma) $ a unitary act over $G$. Define for $ i \in I$ and $\lambda \in \Lambda$  mappings $\pi_i:X \rightarrow Q$, $\varkappa_\lambda: Q \rightarrow X$ such that $q \varkappa_\lambda \pi_i = q \cdot p_{\lambda i}$ for any $q \in Q$, $i \in I$, $\lambda \in \Lambda$. For $x \in X$ and $(g)_{i \lambda} \in S$ put $x \cdot (g)_{i \lambda} = (x \pi_i \cdot g)\varkappa_{\lambda}$. Then $X$ is an act over $S$. Moreover, every act over a completely simple semigroup is isomorphic to an act obtained in this way.
 	\end{proposition}
 	
 	\begin{proposition}[\cite{avdeev}, Theorem 4] \label{pr02}
 	    Let $X$ be a set with an element 0, $S=\mathcal{M}^0(G,I,\Lambda,P)$ be a completely 0-simple semigroup, $\{ H_\gamma \mid \gamma \in \Gamma \}$ be a family of subgroups of the group $G$, $ Q = \bigsqcup_{\gamma \in \Gamma} (G/H_\gamma) $ an act over $G$. $Q^0 = Q \cup \{0\}$. Define for $i \in I$ and $\lambda \in \Lambda$ mappings $\pi_i:X \rightarrow Q^0$, $\varkappa_\lambda: Q^0 \rightarrow X$ such that $0\pi_i = 0$, $0\varkappa_\lambda = 0$, $q \varkappa_\lambda \pi_i = q \cdot p_{\lambda i}$ when $ q \in Q^0$, $i \in I$, $\lambda \in \Lambda$. Put $x \cdot 0 = 0$, $x \cdot (g)_{i \lambda} = (x \pi_i \cdot g)\varkappa_{\lambda}$ when $x \in X$, $(g)_{i \lambda} \in S \setminus \{0\}$. Then $X$ is an act with zero over $S$. Furthermore, any act with zero over a completely 0-simple semigroup is isomorphic to an act obtained by this way.
 	\end{proposition}
 	
-	Let $X$ be an act with zero and $X_i$ $(i \in I)$ its subacts. If $X = \bigcup_{i \in I} X_i$ and $X_i \cap X_j = \{0\}$ for $i \neq j$. Then we say that $X$ is a 0-coproduct of acts $X_i$ and write $X = \bigsqcup_{i \in I}^0 X_i$.
+	Let $X$ be an act with zero and $X_i$ $(i \in I)$ its subacts. If $X = \bigcup_{i \in I} X_i$ and $X_i \cap X_j = \{0\}$ for $i \neq j$, then we say that $X$ is a 0-coproduct of the acts $X_i$ and write $X = \bigsqcup_{i \in I}^0 X_i$.
 	
 	Now let $X$ be an act with zero over a completely 0--simple semigroup $S=\mathcal{M}^0(G,I,\Lambda,P)$ obtained by the above described construction, i.e. $Q^0,\varkappa_\lambda,\pi_i$ have the same meaning as in Proposition~\ref{pr02}. Put $Q_\gamma = (G/H_\gamma) \cup \{0\}$. For $q \in Q^0$, $\gamma \in \Gamma$ let $X_q = \{q\varkappa_\lambda \mid \lambda \in \Lambda \}$, $X^{(\gamma)} = \bigcup\{X_q \mid q \in Q_{\gamma}\}$. Some properties of these sets are remarked in the next proposition.
 	
@@ -247,7 +249,7 @@ The main results of this this work are the following statements.
 		\end{enumerate}
 	\end{proposition}
 	
-	Our next goal is to find for an act $X$ some quotient act of a subact with certain properties in case when $G$ and $I$ are finite sets and $\Gamma, \Lambda$ are infinite ones.
+	Our next goal is to find for an act $X$ some quotient act of a subact with certain properties in a case when $G$ and $I$ are finite sets, and $\Gamma, \Lambda$ are infinite ones.
 	
 	Let $S=\mathcal{M}^0(G,I,\Lambda,P)$ be a completely 0-simple semigroup. For $i \in I$ we put $R_i = \{0\} \cup \{(g)_{i\lambda} \mid g \in G, \lambda \in \Lambda\}$. We shall consider $R_i$ as an act over $S$. Obviously $S = \bigsqcup_{i \in I}^0 R_i$.
 	
@@ -305,7 +307,7 @@ The main results of this this work are the following statements.
 
         Prove that $\rho(\sigma \vee \tau) = \rho(\sigma) \vee \rho(\tau)$.  The inclusion  $\rho(\sigma) \vee \rho(\tau) \subseteq \rho(\sigma \vee \tau)$ is obvious. Let $(x, x') \in \rho(\sigma \vee \tau)$. If $x=0$ then $(x, x') = (0,0) \in \rho(\sigma) \vee \rho(\tau)$. If $x \ne 0$ then $x' \ne 0$ and $(x, x') =(\varphi_i(y), \varphi_j(y))$ for some $y\in Y \setminus \{ 0\}$ and $(i, j) \in \sigma \vee \tau$. Clearly, there exist elements $i_1, i_2, \ldots, i_{2m-1} \in I$ such that $(i, i_1) \in \sigma, \,(i_1, i_2) \in \tau, \, \ldots, \, (i_{2m-2}, i_{2m-1}) \in \sigma, \, (i_{2m-1}, j) \in \tau$. Consider the elements $x_k=\varphi_{i_k}(y)$ $(k=1,2, \ldots, 2m-1)$. Then $(x, x_1) \in \rho(\sigma)$, $(x_1, x_2) \in \rho(\tau)$, $\ldots,$, $(x_{2m-2}, x_{2m-1}) \in \rho(\sigma)$, $(x_{2m-1}, x') \in \rho(\tau)$. We obtain from this that $(x, x') \in \rho(\sigma) \vee \rho(\tau)$. Thus, $\rho(\sigma \vee \tau) = \rho(\sigma) \vee \rho(\tau)$.
 
-        Consider the mapping  $\Con X \to \Eq I$, $\sigma \mapsto \rho(\sigma)$. The considerations above show that this mapping is an isomorphic embedding the lattice $\Eq I$ into the lattice $\Con X$. As $I$ is infinite then by Lemma~\ref{lb0} $\Eq I$ does not satisfy a non-trivial lattice identity. Therefore $\Con X$ does not satisfy too. This contradicts to the condition of lemma.
+        Consider the mapping  $\Con X \to \Eq I$, $\sigma \mapsto \rho(\sigma)$. The considerations above show that this mapping is an isomorphic embedding of the lattice $\Eq I$ into the lattice $\Con X$. As $I$ is infinite, then by Lemma~\ref{lb0} $\Eq I$ does not satisfy a non-trivial lattice identity. Therefore $\Con X$ does not satisfy too. This contradicts the condition of lemma.
 	\end{proof}
 	
 	The next lemma is the last step before the proof of Theorem~\ref{t02}.
@@ -314,26 +316,26 @@ The main results of this this work are the following statements.
 	    Let $\rho$ be a congruence on the act $R_i$ and $H$ be such subgroup that $\rho \neq \nabla_{R_i}$ and~\eqref{eq1} holds. If $(a)_{i \lambda} \ \rho \ (b)_{i \mu}$ for some $a,b \in G$, $\lambda,\mu \in \Lambda $ then $\lambda \equiv \mu$ (see~\eqref{eq821}) and $\forall j \in I \ p_{\lambda j} \neq 0 \rightarrow p_{\lambda j} p_{\mu j}^{-1} \in a^{-1}Hb$ for some subgroup $H \subseteq G$.
 	\end{lemma}
 	\begin{proof}
-	    Let $(a)_{i \lambda} \ \rho \ (b)_{i \mu}$. If $p_{\lambda j} = 0$ and $p_{\mu j} \neq 0$ then $0 = (a)_{i \lambda} \cdot (e)_{j \lambda} \rho (b)_{i \mu} \cdot (e)_{j \lambda} = (bp_{\mu j})_{i \lambda}$. Thus, $0 \ \rho \ x$ for some $x \neq 0$. As $R_i$ is 0-simple then $\rho = \nabla_{R_i}$ which is impossible. So we proved that $\lambda \equiv \mu$. Let $p_{\lambda j} \neq 0$. Then $(ap_{\lambda j})_{i \lambda} \ \rho \ (bp_{\mu j})_{i \lambda}.$ By Lemma~\ref{lemma:B} we obtain $Hap_{\lambda j} = Hbp_{\mu j}$ for some subgroup $H$ i.e. $p_{\lambda j} p_{\mu j}^{-1} \in a^{-1}Hb$.
+	    Let $(a)_{i \lambda} \ \rho \ (b)_{i \mu}$. If $p_{\lambda j} = 0$ and $p_{\mu j} \neq 0$ then $0 = (a)_{i \lambda} \cdot (e)_{j \lambda} \rho (b)_{i \mu} \cdot (e)_{j \lambda} = (bp_{\mu j})_{i \lambda}$. Thus, $0 \ \rho \ x$ for some $x \neq 0$. As $R_i$ is 0-simple then $\rho = \nabla_{R_i}$, which is impossible. So we proved that $\lambda \equiv \mu$. Let $p_{\lambda j} \neq 0$. Then $(ap_{\lambda j})_{i \lambda} \ \rho \ (bp_{\mu j})_{i \lambda}.$ By Lemma~\ref{lemma:B} we obtain $Hap_{\lambda j} = Hbp_{\mu j}$ for some subgroup $H$ i.e. $p_{\lambda j} p_{\mu j}^{-1} \in a^{-1}Hb$.
 	\end{proof}
 	
 	\begin{proof}[Proof of Theorem~\ref{t02}]
-		\textit{Sufficiency.} If $X$ is a finite act then the lattice  $\Con X$ is finite and therefore, by Lemma~\ref{lb0}, satisfies a non-trivial identity.
+		\textit{Sufficiency.} If $X$ is a finite act, then the lattice  $\Con X$ is finite and therefore, by Lemma~\ref{lb0}, satisfies a non-trivial identity.
 		
-		\textit{Necessity.} Let $X$ be an act with zero over a completely 0-simple semigroup $S={\mathcal M}^0(G,I,\Lambda,P)$ where $|G|,|I| <\infty$ and the lattice $\Con X$ satisfies a non-trivial identity.
+		\textit{Necessity.} Let $X$ be an act with zero over a completely 0-simple semigroup $S={\mathcal M}^0(G,I,\Lambda,P)$, where $|G|,|I| <\infty$ and the lattice $\Con X$ satisfies a non-trivial identity.
 
-        Note that $|X\setminus XS|<\infty$. Indeed, if $X\setminus XS$ is infinite then quotient act $X/XS$ is an infinite act consisted only of zeros. Then $\Con (X/XS) = \Eq (X/XS)$. Lemmas~\ref{lemma:01} and~\ref{lemma:b1} show that all identities of $\Con X$ are trivial. This contradicts to the supposition.
+        Note that $|X\setminus XS|<\infty$. Indeed, if $X\setminus XS$ is infinite, then quotient act $X/XS$ is an infinite act consisted only of zeros. Then $\Con (X/XS) = \Eq (X/XS)$. Lemmas~\ref{lemma:01} and~\ref{lemma:b1} show that all identities of $\Con X$ are trivial. This contradicts the supposition.
 
         Thus, $X\setminus XS$ is finite. As $X=(X\setminus XS)\cup \coprod_{\gamma \in \Gamma}^0 z_\gamma S$ (by Proposition~\ref{pr02}) then it is sufficient to prove the finiteness of $\Gamma$ and every $z_\gamma S$.
 
-        Consider a subact $Y=\coprod_{\gamma \in \Gamma}^0 z_\gamma S$. Since $S=\bigcup_{i \in I}R_i$ and $z_\gamma S \ne 0$, there exists $i \in I$ such that $z_\gamma R_i \ne 0$, and therefore, in view of the 0-simplicity of $z_\gamma S$, $z_\gamma S = z_\gamma R_i$. Choose for each $\gamma \in \Gamma$ some $i \in I$ such that $z_\gamma S = z_\gamma R_i \ne 0$. As $I$ is finite and $\Gamma$ is infinite then there an infinite subset $\Gamma_1 \subseteq \Gamma$ and an element $i \in I$ such that $z_\gamma R_i \ne 0$ for all $\gamma \in \Gamma_1$. Consider a subact $Y =\coprod_{\gamma \in \Gamma_1}^0 z_\gamma S$ of the act $Y$. By Lemma~\ref{lemma:01} $\Con Y$ is a sublattice of $\Con Y$, therefore $\Con Y$ satisfies a non-trivial identity.
+        Consider a subact $Y=\coprod_{\gamma \in \Gamma}^0 z_\gamma S$. Since $S=\bigcup_{i \in I}R_i$ and $z_\gamma S \ne 0$, there exists $i \in I$ such that $z_\gamma R_i \ne 0$, and therefore, in view of the 0-simplicity of $z_\gamma S$, $z_\gamma S = z_\gamma R_i$. Choose for each $\gamma \in \Gamma$ some $i \in I$ such that $z_\gamma S = z_\gamma R_i \ne 0$. As $I$ is finite and $\Gamma$ is infinite, then there exist an infinite subset $\Gamma_1 \subseteq \Gamma$ and an element $i \in I$ such that $z_\gamma R_i \ne 0$ for all $\gamma \in \Gamma_1$. Consider a subact $Y' =\coprod_{\gamma \in \Gamma_1}^0 z_\gamma S$ of the act $Y$. By Lemma~\ref{lemma:01} $\Con Y'$ is a sublattice of $\Con Y$, therefore $\Con Y'$ satisfies a non-trivial identity.
 
         We have $z_\gamma S = z_\gamma R_i \ne 0$ for all $\gamma \in \Gamma_1$. As $z_\gamma R_i$ is a cyclic act then $z_\gamma R_i \cong R_i/\rho_\gamma$ for some congruence $\rho_\gamma$ of the act $R_i$. As $z_\gamma R_i \ne 0$ then $\rho_\gamma \ne \nabla_{R_i}$, therefore by Lemma~\ref{lemma:B} there exists a subgroup $H$ of the group $G$ such that $\{ 0 \}$ is a $\rho_\gamma$-class and
         $$ (a)_{i\lambda}\, \rho_\gamma \, (b)_{i\lambda} \leftrightarrow Ha=Hb  $$
 
-        for $a,b\in G$, $\lambda \in \Lambda$. Here $H$ is determined uniquely by $\gamma \in \Gamma_1$. As $G$ is finite then it has only finitely many subgroups, therefore there exist a subgroup $H \subseteq G$ and an infinite subset $\Gamma_2 \subseteq \Gamma_1$ such that~\eqref{eq1} holds for $H$ and for all $\gamma \in \Gamma_2$. By Lemma~\ref{lemma:928} $\rho_\gamma \subseteq \overline \rho_\gamma$ where $\overline \rho_\gamma$ is the greatest congruence for given subgroup $H$. Clearly $\overline \rho_\gamma = \overline\rho_{\gamma'}$ for all $\gamma, \gamma' \in \Gamma_2$. Let $Y''= \coprod_{\gamma \in \Gamma_2}^0 R_i/{\overline \rho_\gamma}$. By Lemma~\ref{lemma:01} the lattice ${\rm Con}Y''$ is a sublattice of the lattice ${\rm Con}Y'$, therefore the lattice ${\rm Con}Y''$ satisfies a non-trivial identity. However, this is impossible because of Lemma~\ref{lemma:456} (as $\Gamma_2$ is infinite and $\overline\rho_\gamma$ coincide with one another). This contradiction shows that $\Gamma$ is finite.
+        for $a,b\in G$, $\lambda \in \Lambda$. Here $H$ is determined uniquely by $\gamma \in \Gamma_1$. As $G$ is finite then it has only finitely many subgroups, therefore there exist a subgroup $H \subseteq G$ and an infinite subset $\Gamma_2 \subseteq \Gamma_1$ such that~\eqref{eq1} holds for $H$ and for all $\gamma \in \Gamma_2$. By Lemma~\ref{lemma:928} $\rho_\gamma \subseteq \overline \rho_\gamma$ where $\overline \rho_\gamma$ is the greatest congruence for a given subgroup $H$. Clearly $\overline \rho_\gamma = \overline\rho_{\gamma'}$ for all $\gamma, \gamma' \in \Gamma_2$. Let $Y''= \coprod_{\gamma \in \Gamma_2}^0 R_i/{\overline \rho_\gamma}$. By Lemma~\ref{lemma:01} the lattice ${\rm Con}Y''$ is a sublattice of the lattice ${\rm Con}Y'$, therefore the lattice ${\rm Con}Y''$ satisfies a non-trivial identity. However, this is impossible because of Lemma~\ref{lemma:456} (as $\Gamma_2$ is infinite and $\overline\rho_\gamma$ coincide with one another). This contradiction shows that $\Gamma$ is finite.
 
-        It remains to prove that each act $z_\gamma S$ is finite. Let $z_\gamma S$ is infinite. We have $z_\gamma S = z_\gamma R_i$ ($i$ is fixed). The set $z_\gamma R_i$ is infinite. By condition the set $I$ is finite. We may assume that $I=\{ 1,2, \ldots, m\}$. Further, we may connect with any $\lambda \in \Lambda$ a row $r(\lambda) = (p_{\lambda 1}, p_{\lambda 2}, \ldots, p_{\lambda m})$ of elements of sandwich-matrix $P$. As $G$ is finite then there are only finitely many of different rows. Introduce a relation $\approx$ on the set $\Lambda$ putting
+        It remains to prove that each act $z_\gamma S$ is finite. Let suppose that $z_\gamma S$ is infinite. We have $z_\gamma S = z_\gamma R_i$ ($i$ is fixed). The set $z_\gamma R_i$ is infinite. By condition the set $I$ is finite. We may assume that $I=\{ 1,2, \ldots, m\}$. Further, we may connect with any $\lambda \in \Lambda$ a row $r(\lambda) = (p_{\lambda 1}, p_{\lambda 2}, \ldots, p_{\lambda m})$ of elements of a sandwich-matrix $P$. As $G$ is finite then there are only finitely many of different rows. Introduce a relation $\approx$ on the set $\Lambda$ putting
 
         $$ \lambda \approx \mu \leftrightarrow \forall j\in I \,\, p_{\lambda j} = p_{\mu j} $$
 
@@ -341,9 +343,9 @@ The main results of this this work are the following statements.
 
         For any $g \in G$ we put $$ M(g)= \{ z_\gamma \cdot (g)_{i\lambda} \mid \lambda \in \Lambda \}.  $$ Clearly $z_\gamma R_i = \{0\} \cup \bigcup_{g\in G} M(g)$. As $G$ is finite and $z_\gamma R_i$ is infinite then there exist $g\in G$ and infinite subset $\Lambda' \subseteq \Lambda$ such that $z_\gamma \cdot (g)_{ i \lambda } \ne z_\gamma \cdot (g)_{ i \mu}$ for $\lambda, \mu \in \Lambda'$, $\lambda \ne \mu$. Put $u_\lambda=z_\gamma \cdot (g)_{i\lambda}$ for $\lambda \in \Lambda'$. The infinite set $\Lambda'$ is divided by the relation $\approx$ into finitely many classes. Therefore at lest one of the classes is infinite, say, $\Lambda''$.
 
-        We have $u_\lambda \ne u_\mu$, $\lambda \approx \mu$ for the elements $\lambda \ne \mu$ of $\Lambda''$. Prove that $u_\lambda s=u_\mu s$ for any $\lambda, \mu \in \Lambda''$ and $s\in S$. Indeed, it is clear for $s=0$. Let $s\ne 0$. Then $s=(h)_{j\nu}$ for some $h\in G$, $j\in I$, $\nu \in \Lambda$. If $p_{\lambda j}=0$ then $p_{\mu j}=0$ (since $\lambda \approx \mu$), therefore $u_\lambda s=u_\mu s=0$. If $p_{\lambda j}\ne 0$ then $p_{\mu j} \ne 0$, moreover $p_{\lambda j}=p_{\mu j}$ (since $\lambda \approx \mu$). Now we have $u_\lambda s=z_\gamma\cdot (g)_{i\lambda} \cdot (h)_{j\nu} = z_\gamma\cdot (gp_{\lambda j}h)_{i\nu} = z_\gamma \cdot (gp_{\mu j}h)_{i\nu} = z_\gamma \cdot (g)_{i\mu} \cdot (h)_{j\nu} =u_\mu s$.
+        We have $u_\lambda \ne u_\mu$, $\lambda \approx \mu$ for the elements $\lambda \ne \mu$ of $\Lambda''$. Prove that $u_\lambda s=u_\mu s$ for any $\lambda, \mu \in \Lambda''$ and $s\in S$. Indeed, it is clear for $s=0$. Let $s\ne 0$. Then $s=(h)_{j\nu}$ for some $h\in G$, $j\in I$, $\nu \in \Lambda$. If $p_{\lambda j}=0$, then $p_{\mu j}=0$ (since $\lambda \approx \mu$), therefore $u_\lambda s=u_\mu s=0$. If $p_{\lambda j}\ne 0$, then $p_{\mu j} \ne 0$, moreover $p_{\lambda j}=p_{\mu j}$ (since $\lambda \approx \mu$). Now we have $u_\lambda s=z_\gamma\cdot (g)_{i\lambda} \cdot (h)_{j\nu} = z_\gamma\cdot (gp_{\lambda j}h)_{i\nu} = z_\gamma \cdot (gp_{\mu j}h)_{i\nu} = z_\gamma \cdot (g)_{i\mu} \cdot (h)_{j\nu} =u_\mu s$.
 
-        As $u_\lambda \ne 0$ and $z_\gamma R_i$ is generated by any its element then $u_\lambda R_i = z_\gamma R_i$ for any $\lambda \in \Lambda''$. For any equivalence relation $\sigma \in {\rm Eq}\Lambda''$ we construct an equivalence relation $\rho(\sigma)$ on $\Lambda''$ as follows: $$ \rho(\sigma)=\{ (u_\lambda,u_\mu) \mid (\lambda,\mu)\in \sigma \} \cup \Delta_{z_\gamma R_i}.  $$ As $u_\lambda s=u_\mu s$ for all $s\in S$ then $\rho(\sigma)$ is a congruence on $z_\gamma R_i$. It is not difficult to verify that $\rho (\sigma \cap \tau) =\rho(\sigma) \cap \rho(\tau)$ and $\rho (\sigma \vee \tau) =\rho(\sigma) \vee \rho(\tau)$. Moreover,the mapping $\sigma \mapsto \rho(\sigma)$ is injective. Therefore, this mapping is an isomorphic embedding the lattice ${\rm Eq}\Lambda''$ into the lattice ${\rm Con}(z_\gamma R_i)$.   The Lemmas~\ref{lemma:456} and~\ref{lemma:01} show that the lattice ${\rm Con}(z_\gamma R_i)$ does not satisfy a non-trivial identity. But this is impossible. This contradiction completes the proof of theorem.
+        As $u_\lambda \ne 0$ and $z_\gamma R_i$ is generated by any its element, then $u_\lambda R_i = z_\gamma R_i$ for any $\lambda \in \Lambda''$. For any equivalence relation $\sigma \in {\rm Eq}\Lambda''$ we construct an equivalence relation $\rho(\sigma)$ on $\Lambda''$ as follows: $$ \rho(\sigma)=\{ (u_\lambda,u_\mu) \mid (\lambda,\mu)\in \sigma \} \cup \Delta_{z_\gamma R_i}.  $$ As $u_\lambda s=u_\mu s$ for all $s\in S$, then $\rho(\sigma)$ is a congruence on $z_\gamma R_i$. It is not difficult to verify that $\rho (\sigma \cap \tau) =\rho(\sigma) \cap \rho(\tau)$ and $\rho (\sigma \vee \tau) =\rho(\sigma) \vee \rho(\tau)$. Moreover, the mapping $\sigma \mapsto \rho(\sigma)$ is injective. Therefore, this mapping is an isomorphic embedding of the lattice ${\rm Eq}\Lambda''$ into the lattice ${\rm Con}(z_\gamma R_i)$.   The Lemmas~\ref{lemma:456} and~\ref{lemma:01} show that the lattice ${\rm Con}(z_\gamma R_i)$ does not satisfy a non-trivial identity. But this is impossible. This contradiction completes the proof of the theorem.
 	\end{proof}
 	
 	Recall that an act $U$ over a semigroup $S$ is called \textit{simple} if $uS = U$ for all $ u \in U$, and \textit{congruence-simple} if $|\Con U| \leqslant 2$.
@@ -356,15 +358,15 @@ The main results of this this work are the following statements.
 				0 \text{ for } i \neq j.
 			\end{cases}
 		$$
-		Prove that a principal ideal $$ R = \{ (1)_{1i} \mid i \in \mathbb{N} \} \cup \{0\} $$ is an infinite act with zero over $S$, which have 2-element congruence lattice  $\Con R = \{ \Delta_R, \nabla_R\}$, i.e. $R$ is an congruence-simple act. In this case lattice $\Con R$ is finite and hence, holds a non-trivial identity (for example, distributive identity). In fact, it satisfies any non-trivial identity.
+		Prove that a principal ideal $$ R = \{ (1)_{1i} \mid i \in \mathbb{N} \} \cup \{0\} $$ is an infinite act with zero over $S$, which has a 2-element congruence lattice  $\Con R = \{ \Delta_R, \nabla_R\}$, i.e. $R$ is an congruence-simple act. In this case lattice $\Con R$ is finite and hence, holds a non-trivial identity (for example, distributive identity). In fact, it satisfies any non-trivial identity.
 		
-		To prove that $\Con R = \{ \Delta_R, \nabla_R \}$ it is enough to show that congruence which is generated by pair $(x,y)$ where $x,y \in R$ and $x \neq y$ coincides with $\nabla_R$.
+		To prove that $\Con R = \{ \Delta_R, \nabla_R \}$, it is enough to show that congruence, which is generated by pair $(x,y)$ where $x,y \in R$, and $x \neq y$ coincides with $\nabla_R$.
 		
-		Let $\rho$ is a congruence generated by pair $(0,(1)_{1i})$. As $(0,(1)_{1i}) \cdot (1)_{ij} = (0,(1)_{1j})$ then $(0,(1)_{1j}) \in \rho$. Similarly $(0,(1)_{1k}) \in \rho$ for any $k$. Hence  \newline $((1)_{1j},(1)_{1k}) \in \rho$. Thus $\rho = \nabla_R$. It is easy to prove that also $\rho = \nabla_R$ if $\rho$ generated by pair $((1)_{1i},(1)_{1j})$ where $i \neq j$.
+		Let $\rho$ is a congruence generated by pair $(0,(1)_{1i})$. As $(0,(1)_{1i}) \cdot (1)_{ij} = (0,(1)_{1j})$, then $(0,(1)_{1j}) \in \rho$. Similarly $(0,(1)_{1k}) \in \rho$ for any $k$. Hence  \newline $((1)_{1j},(1)_{1k}) \in \rho$. Thus $\rho = \nabla_R$. It is easy to prove that also $\rho = \nabla_R$ if $\rho$ generated by pair $((1)_{1i},(1)_{1j})$ where $i \neq j$.
 	\end{proof}
 	
 	\begin{lemma}   \label{l2.1}
-	    Let $U$ be a simple act over a completely simple semigroup $S = \mathcal{M}(G,I,\Lambda,P)$. Then $U = uS = u R_i$ for any $u \in U$, $i \in I$. Also, $u \cdot
+	    Let $U$ be a simple act over a completely simple semigroup $S = \mathcal{M}(G,I,\Lambda,P)$. Then $U = uS = u R_i$ for any $u \in U$, $i \in I$. Also $u \cdot
 	    {(p_{\lambda i}^{-1})}_{i \lambda} = u$ for some $\lambda \in \Lambda$.
 	\end{lemma}
 	\begin{proof}
@@ -372,7 +374,7 @@ The main results of this this work are the following statements.
 	\end{proof}
 	
 	\begin{lemma} \label{l2.2}
-	    Let $U$ be a simple act over a completely simple semigroup $S = \mathcal{M}(G,I,\Lambda,P)$. Then for any $i \in I$ there exists a congruence $\rho$ of act $R_i$ such that $U \cong {R_i}/{\rho}$.
+	    Let $U$ be a simple act over a completely simple semigroup $S = \mathcal{M}(G,I,\Lambda,P)$. Then for any $i \in I$ there exists a congruence $\rho$ of an act $R_i$ such that $U \cong {R_i}/{\rho}$.
 	\end{lemma}
 	\begin{proof}
 	    According to the previous Lemma, for some $\lambda \in \Lambda$ we have $u = u e_i$, where $e_i = (p_{\lambda i}^{-1})_{i \lambda}$. Consider the mapping $\varphi: R_i \rightarrow U$, $r \rightarrow ur$, $r \in R_i$. Obviously, $\varphi$ is a homomorphism of acts. Since $U$ is simple, then $R_i \varphi = U$. Now by the Isomorphism Theorem $U \cong {R_i}/{\rho}$ for some $\rho \in \Con R_i$.
@@ -381,7 +383,7 @@ The main results of this this work are the following statements.
 	\par In the article~\cite{oehmke} all right congruences of a completely simple semigroup $S = \mathcal{M}(G,I,\Lambda,P)$ were described. Since $S_S \cong \bigsqcup_{i \in I} R_i$, you can use Theorem 2 from~\cite{oehmke} to find all the congruences of the act $R_i$. However, for further we will not need a full description, but only some properties of congruences on $R_i$.
 	
 	\begin{lemma} \label{l2.3}
-	    Let $\rho$ be a congruence of act $ R_i$. Consider the act $R_i$ as a disjoint union of subsets: $R_i = \bigcup_{\lambda \in \Lambda}(G)_{i \lambda}$, where $(G)_{i \lambda} = \{ (g)_{i \lambda} \mid g \in G \}$ for $\lambda \in \Lambda$. Then there exists a subgroup $H$ of the group $G$ such that
+	    Let $\rho$ be a congruence of an act $ R_i$. Consider the act $R_i$ as a disjoint union of subsets: $R_i = \bigcup_{\lambda \in \Lambda}(G)_{i \lambda}$, where $(G)_{i \lambda} = \{ (g)_{i \lambda} \mid g \in G \}$ for $\lambda \in \Lambda$. Then there exists a subgroup $H$ of the group $G$ such that
 		\begin{gather}
 			((a)_{i \lambda},(b)_{i \lambda}) \in \rho \leftrightarrow Ha = Hb \label{f2.1}
 		\end{gather}
@@ -394,25 +396,25 @@ The main results of this this work are the following statements.
 		\end{gather}
 		Check that $\sigma$ is a right congruence on the group $G$. Indeed, let $(g,g') \in \sigma$ and $a \in G$. Then it follows from~\eqref{f2.2} that $((g)_{i \lambda},(g')_{i \lambda}) \in \rho$. Multiplying by $(p_{\lambda i}^{-1} a)_{i \lambda}$ we get: $$ ((g)_{i \lambda} \cdot (p_{\lambda i}^{-1} a)_{i \lambda},(g')_{i \lambda} \cdot (p_{\lambda i}^{-1} a)_{i \lambda}) \in \rho, $$ i.e. $ ((g a)_{i \lambda},(g' a)_{i \lambda}) \in \rho $. Because of~\eqref{f2.2} this means that $(ga,g'a) \in \sigma$. Thus, $\sigma$ is a right congruence on the group $G$. It is well known that any right congruence on the group corresponds to a decomposition of the group $G$ into right cosets by some subgroup $H$. Hence $(g,g') \in \sigma \leftrightarrow Hg = Hg'$.
 		
-		So, for each $\lambda \in \Lambda$ we have: $$ ((g)_{i \lambda},(g')_{i \lambda}) \in \rho \Leftrightarrow Hg = Hg' $$ for some subgroup $H$ of group $G$. To prove the statement~\eqref{f2.1} it remains to show that the subgroup $H$ is not depend on $\lambda \in \Lambda$.
+		So, for each $\lambda \in \Lambda$ we have: $$ ((g)_{i \lambda},(g')_{i \lambda}) \in \rho \Leftrightarrow Hg = Hg' $$ for some subgroup $H$ of the group $G$. To prove the statement~\eqref{f2.1} it remains to show that the subgroup $H$ does not depend on $\lambda \in \Lambda$.
 		
 		\par Let $H,H'$ be subgroups, $\lambda,\mu \in \Lambda$ and
 		\begin{gather*}
 			((a)_{i \lambda},(b)_{i \lambda}) \in \rho \leftrightarrow Ha = Hb, \\
 			((a)_{i \mu},(b)_{i \mu}) \in \rho \leftrightarrow Ha' = Hb'.
 		\end{gather*}
-		Let $h \in H$. Then $((e)_{i \lambda},(h)_{i \lambda}) \in \rho$. Multiplying on the right side by $(e)_{i \mu}$, we get: $((p_{\lambda i})_{i \mu}, (h p_{\lambda i})_{i \mu}) \in \rho$, which means $H' p_{\lambda i} = H' h p_{\lambda i}$. From here we get: $h \in H'$. We prove that $H' \subseteq H$. By the symmetry $H \subseteq H'$ too.
+		Let $h \in H$. Then $((e)_{i \lambda},(h)_{i \lambda}) \in \rho$. Multiplying on the right side by $(e)_{i \mu}$, we get: $((p_{\lambda i})_{i \mu}, (h p_{\lambda i})_{i \mu}) \in \rho$, which means $H' p_{\lambda i} = H' h p_{\lambda i}$. From here we get: $h \in H'$. We have proved that $H' \subseteq H$. By the symmetry $H \subseteq H'$ too.
 	\end{proof}
 	
 	\begin{lemma} \label{l2.4}
-	    Let $S = \mathcal{M}(G,I,\Lambda,P)$ be a completely simple semigroup, $R_i = \{ (g)_{i \lambda} \mid g \in G, \lambda \in \Lambda \} $ be a principle right ideal of the semigroup $S$, considered as a right act over $S$. Let $\rho$ be a congruence on act $R_i$ and $H$ be a subgroup of group $G$ defined in Lemma~\ref{l2.3}. If $((a)_{i \lambda},(b)_{i \mu}) \in \rho$, then $p_{\lambda j}p_{\mu j}^{-1} \in a^{-1} H b$ for all $j \in I$.
+	    Let $S = \mathcal{M}(G,I,\Lambda,P)$ be a completely simple semigroup, $R_i = \{ (g)_{i \lambda} \mid g \in G, \lambda \in \Lambda \} $ be a principle right ideal of the semigroup $S$, considered as a right act over $S$. Let $\rho$ be a congruence on the act $R_i$ and $H$ be a subgroup of the group $G$ defined in Lemma~\ref{l2.3}. If $((a)_{i \lambda},(b)_{i \mu}) \in \rho$, then $p_{\lambda j}p_{\mu j}^{-1} \in a^{-1} H b$ for all $j \in I$.
 	\end{lemma}
 	\begin{proof}
 	    Take any $j \in I$, $\nu \in \Lambda$. Then we get: $((a)_{i \lambda} \cdot (e)_{j \nu},(b)_{i \mu} \cdot (e)_{j \nu}) \in \rho$, i.e. $((ap_{\lambda j})_{i \nu},(bp_{\mu j})_{i \nu}) \in \rho$. By Lemma~\ref{l2.3} $H a p_{\lambda i} = H b p_{\mu j}$. Hence, $p_{\lambda j} p_{\mu j}^{-1} \in a^{-1} H b$.
 	\end{proof}
 	
 	\begin{lemma} \label{l2.5}
-		Let $S = \mathcal{M}(G,I,\Lambda,P)$ be a completely simple semigroup. Take any $i \in I$ and subgroup $H$ of group $G$. For $(a)_{i \lambda},(b)_{i \mu} \in R_i$ we put
+		Let $S = \mathcal{M}(G,I,\Lambda,P)$ be a completely simple semigroup. Take any $i \in I$ and a subgroup $H$ of the group $G$. For $(a)_{i \lambda},(b)_{i \mu} \in R_i$ we put
 		\begin{gather}
 			((a)_{i \lambda},(b)_{i \mu}) \in \rho \leftrightarrow \forall j \in I \ p_{\lambda j} p_{\mu j}^{-1} \in a^{-1} H b. \label{f2.3}
 		\end{gather}
@@ -421,7 +423,7 @@ The main results of this this work are the following statements.
 	\begin{proof}
 		Check that the formula~(\ref{f2.3}) defines a congruence. For $\lambda = \mu$ we get $((a)_{i \lambda},(b)_{i \mu}) \in \rho \leftrightarrow e \in a^{-1} H b$, i.e. $((a)_{i \lambda},(b)_{i \lambda}) \in \rho \leftrightarrow H a = H b$. The reflexivity of the relation $\rho$ is obvious.
 		
-		Let $((a)_{i \lambda},(b)_{i \mu}) \in \rho$. Then $p_{\lambda j} p_{\mu j}^{-1} \in a^{-1} H b$ for all $j \in I$. Hence, $(p_{\lambda j} p_{\mu j}^{-1})^{-1} \in (a^{-1} H b)^{-1}$, i.e. $p_{\mu j} p_{\lambda j}^{-1} \in b^{-1} H a$ for all $j$. This means that $((b)_{i \mu},(a)_{i \lambda}) \in \rho$. This proves the symmetry of the relation $\rho$. Next we show transitivity.
+		Let $((a)_{i \lambda},(b)_{i \mu}) \in \rho$. Then $p_{\lambda j} p_{\mu j}^{-1} \in a^{-1} H b$ for all $j \in I$. Hence, $(p_{\lambda j} p_{\mu j}^{-1})^{-1} \in (a^{-1} H b)^{-1}$, i.e. $p_{\mu j} p_{\lambda j}^{-1} \in b^{-1} H a$ for all $j$. This means that $((b)_{i \mu},(a)_{i \lambda}) \in \rho$. This proves the symmetry of the relation $\rho$. Next, we'll show transitivity.
 		
 		Let $((a)_{i \lambda},(b)_{i \mu}),((b)_{i \mu},(c)_{i \nu}) \in \rho$. Then $p_{\lambda j} p_{\mu j}^{-1} \in a^{-1} H b$, $p_{\mu j} p_{\nu j}^{-1} \in b^{-1} H c$ for all $j \in I$. Multiplying these relations, we obtain: $p_{\lambda j} p_{\nu j}^{-1} \in a^{-1} H c$. As this is fulfilled for all $j \in I$, then $\rho$ is transitive.
 		
@@ -477,7 +479,7 @@ The main results of this this work are the following statements.
 			\end{tabular}
 		\end{center}
 		
-		We have: $$p_{\lambda \lambda} p_{\mu \lambda}^{-1} = ha \cdot b \cdot a \cdot w,$$ $$p_{\lambda, \lambda+1} p_{\mu, \lambda+1}^{-1} =a \cdot hb \cdot a \cdot w,$$ $$p_{\lambda, \lambda+2} p_{\mu, \lambda+2}^{-1} =a \cdot b \cdot ha \cdot w,$$ where $w$ is an element of group $G$. It is easy to check, that elements $hab$, $ahb$ and $abh$ is different. Hence, if $|\lambda - \mu| \geqslant 2$ then the set $\{ p_{\lambda j} p_{\mu j}^{-1} \mid j \in I \}$ contains 3 different elements, therefore $\{ p_{\lambda j} p_{\mu j}^{-1} \mid j \in I \} \not \subseteq g^{-1}_1 H g_2$ (as $|H|=2$). If $\lambda$ is odd then also $\{ p_{\lambda j} p_{\mu j}^{-1} \mid j \in I \} \not \subseteq g_1^{-1} H g_2$ (as the elements $hba$, $bha$, and $bah$ are different). Thus $X$ is an infinite act.
+		We have: $$p_{\lambda \lambda} p_{\mu \lambda}^{-1} = ha \cdot b \cdot a \cdot w,$$ $$p_{\lambda, \lambda+1} p_{\mu, \lambda+1}^{-1} =a \cdot hb \cdot a \cdot w,$$ $$p_{\lambda, \lambda+2} p_{\mu, \lambda+2}^{-1} =a \cdot b \cdot ha \cdot w,$$ where $w$ is an element of the group $G$. It is easy to check, that elements $hab$, $ahb$ and $abh$ is different. Hence, if $|\lambda - \mu| \geqslant 2$ then the set $\{ p_{\lambda j} p_{\mu j}^{-1} \mid j \in I \}$ contains 3 different elements, therefore $\{ p_{\lambda j} p_{\mu j}^{-1} \mid j \in I \} \not \subseteq g^{-1}_1 H g_2$ (as $|H|=2$). If $\lambda$ is odd, then also $\{ p_{\lambda j} p_{\mu j}^{-1} \mid j \in I \} \not \subseteq g_1^{-1} H g_2$ (as the elements $hba$, $bha$, and $bah$ are different). Thus $X$ is an infinite act.
 		
 		We only have to prove that $X$ is congruence-simple. By Lemma~\ref{l2.4} $\rho$ is the largest congruence of the act $R_0$ corresponding to the subgroup $H$. Let $\rho' \in \Con R_0$ and $\rho' \supset \rho$. Then $\rho'$ corresponds to some subgroup $H' \supset H$. It is easy to see that $H$ is a maximal proper subgroup of the group $S_3$, therefore $H' = S_3$. Thus,
 		\begin{equation}
@@ -511,13 +513,13 @@ The main results of this this work are the following statements.
 	
 	\begin{thebibliography}{99}
 
-\bibitem{avdeev} Avdeyev, A.Yu., Kozhuhov, I.B.:
+        \bibitem{avdeev} Avdeyev, A.Yu., Kozhuhov, I.B.:
         Acts over completely 0-simple semigroups.
         Acta Cybernetica \textbf{14}(4), 523--531 (2000)
 
-    \bibitem{burris} Burris S., Sankappanavar H.P. A course in universal algebra. The Millenium Eddition, 1981, xvi + 315 pp.
+        \bibitem{burris} Burris S., Sankappanavar H.P. A course in universal algebra. The Millenium Eddition, 1981, xvi + 315 pp.
 
-\bibitem{cliff}
+        \bibitem{cliff}
         Clifford, A.H., Preston, G.B.:
         The Algebraic Theory of Semigroups.
         American  Mathematical  Society,  Providence, Rhode  Island (1958)
@@ -532,21 +534,21 @@ The main results of this this work are the following statements.
         Free Lattices.
         \url{http://math.hawaii.edu/~ralph/Classes/649M/freelat.pdf}
 
-\bibitem{gretz}
+        \bibitem{gretz}
         Gr\"atzer, G.:
         Lattice Theory: Foundation.
         Birkh\"auser Verlag, Basel (2011)
 
-       \bibitem{jipsen} Jipsen P., Rose H. Varieties of lattices. Lect. Notes Math., 1992, No. 1553, x+162 pp.
+        \bibitem{jipsen} Jipsen P., Rose H. Varieties of lattices. Lect. Notes Math., 1992, No. 1553, x+162 pp.
 
-\bibitem{memoirs} Kearnes K.A., Kiss E.W. The shape of congruence lattices. Memoirs of the AMS, 2013, v. 222, Numb. 1046, 169 pp.
+        \bibitem{memoirs} Kearnes K.A., Kiss E.W. The shape of congruence lattices. Memoirs of the AMS, 2013, v. 222, Numb. 1046, 169 pp.
 
-         \bibitem{hal3}
+        \bibitem{hal3}
         Khaliullina A. R.:
         Modularity conditions of the congruence lattice of acts over right or left zero semigroups.
         Far Eastern Mathematical Journal \textbf{15}(1), 102--120 (2015) (in Russian)
 
-          \bibitem{kilp}
+        \bibitem{kilp}
         Kilp, M., Knauer, U., Mikhalev, A.V.:
         Monoids, acts and categories.
         N.Y. -- Berlin, Walter de Gruyter (2000)
@@ -554,7 +556,7 @@ The main results of this this work are the following statements.
        \bibitem{resh}
         Kozhukhov, I.B., Reshetnikov, A.V.:
         Algebras whose equivalence relations are congruences.
-        J. Math. Sci., {\bf 177}:6, 886�907 (2011)
+        J. Math. Sci., \textbf{177}(6), 886\textbackslash96907 (2011)
 
         \bibitem{oehmke}
         Oehmke, R.H.:
@@ -576,3 +578,4 @@ The main results of this this work are the following statements.
 	\end{thebibliography}
 	
 \end{document}
+
